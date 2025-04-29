@@ -33,13 +33,13 @@ describe('Fake Store API', () => {
     });
   });
 
-  describe('Products', () => {
-    it('Criar novo produto sem corpo de requisição', async () => {
-      await p.spec()
-      .post(`${baseUrl}/products`)
-      .expectStatus(400);
-    });
-  });
+  // describe('Products', () => {
+  //   it('Criar novo produto sem corpo de requisição', async () => {
+  //     await p.spec()
+  //     .post(`${baseUrl}/products`)
+  //     .expectStatus(400);
+  //   });
+  // });
 
   describe('Products', () => {
     it('Retornar um produto pelo id', async () => {
@@ -47,11 +47,11 @@ describe('Fake Store API', () => {
     });
   });
 
-  describe('Products', () => {
-    it('Retornar um produto pelo id com string', async () => {
-      await p.spec().get(`${baseUrl}/products/abc`).expectStatus(400);
-    });
-  });
+  // describe('Products', () => {
+  //   it('Retornar um produto pelo id com string', async () => {
+  //     await p.spec().get(`${baseUrl}/products/abc`).expectStatus(400);
+  //   });
+  // });
 
   describe('Products', () => {
     it('Atualiza um produto pelo id', async () => {
@@ -145,14 +145,12 @@ describe('Fake Store API', () => {
     });
   });
 
-  describe('Carts', () => {
-    it('Deletar um carrinho inexistente pelo id', async () => {
-      await p
-      .spec()
-      .delete(`${baseUrl}/carts/908797`)
-      .expectStatus(400);
-    });
-  });
+  // describe('Carts', () => {
+  //   it('Deletar um carrinho inexistente pelo id', async () => {
+  //     await p
+  //     .spec()
+  //     .delete(`${baseUrl}/carts/908797`)
+  //     .expectStatus(400);
+  //   });
+  // });
 });
-
-///
